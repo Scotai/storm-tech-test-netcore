@@ -23,12 +23,12 @@
 
         @foreach (var item in Model.Items.OrderBy(i => i.Importance))
         {
+            //foreach loop = OrderBy added to Models.Items using Importance. High to Low order. Low to High can be done with OrderByDescending.
             string contextualClass;
             switch (item.Importance)
             {
                 case Importance.High:
                     contextualClass = "list-group-item-danger";
-                    //  contextualClass.OrderByDescending(High => Importance.Low).ToList();
                     break;
                 case Importance.Low:
                     contextualClass = "list-group-item-info";
