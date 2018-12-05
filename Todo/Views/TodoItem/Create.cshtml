@@ -39,7 +39,8 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="ResponsiblePartyId"></label>
+                @*Changed <label asp-for="ResponsiblePartyId"></label> to a simple html label*@
+                @Html.Label("Assigned User")
                 @Html.DropDownListFor(
                     m => m.ResponsiblePartyId,
                     dbContext.UserSelectListItems(),
