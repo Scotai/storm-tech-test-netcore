@@ -22,7 +22,8 @@ namespace Todo.Models.TodoItems
             Title = title;
             IsDone = isDone;
             ResponsiblePartyId = responsiblePartyId;
-            Importance = Importance.Medium;
+            //Changed Importance.Medium to importance
+            Importance = importance;
         }
     }
 }
